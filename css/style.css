@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Open Sans", "Ariel", sans-serif;
 
@@ -57,6 +63,13 @@ a, button {
     font-weight: 400;
     font-size: 38px;
     line-height: 120%;
+}
+
+.container {
+    min-height: 320px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 :root {
