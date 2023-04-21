@@ -99,7 +99,7 @@ button:hover {
     display: inline-block;
     text-decoration: none;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 10px 15px;
     color: var(--black);
     
 }
