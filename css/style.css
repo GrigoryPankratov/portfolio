@@ -104,9 +104,16 @@ button:hover {
     color: var(--green);
 }
 
+.Sort {
+    display: flex;
+    gap: 20px;
+}
+
 .social {
+    display: flex;
     margin: 0;
     padding: 0;
+    gap: 20px;
     list-style-type: none;
 }
 
@@ -117,8 +124,10 @@ button:hover {
 }
 
 .contact {
+    display: flex;
     margin: 0;
     padding: 0;
+    gap: 40px;
     list-style-type: none;
 }
 
@@ -136,6 +145,7 @@ button:hover {
     width: 50px;
     left: 20px;
     top: 20px;
+    gap: 200px;
     border-radius: 50000000px;
     padding: 10px;
     color: var(--green);
