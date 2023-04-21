@@ -78,6 +78,7 @@ button:hover {
     font-weight: 400;
     font-size: 38px;
     line-height: 120%;
+    color: var(--green);
 }
 
 .name img {
