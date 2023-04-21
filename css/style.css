@@ -64,6 +64,9 @@ button {
     background-color: var(--white);
     cursor: pointer;
     text-transform: lowercase;
+    height: 36px;
+    width: 148px;
+
 }
 
 button:hover {
@@ -173,6 +176,10 @@ button:hover {
 .social-link:hover {
     color: var(--white);
     background-color: var(--green);
+}
+
+.contact-link:hover {
+    color: var(--green);
 }
 
 .visually-hidden {
