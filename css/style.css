@@ -80,6 +80,10 @@ button:hover {
     line-height: 120%;
 }
 
+.name img {
+    border-radius: 50%;
+}
+
 .container {
     min-height: 320px;
     max-width: 1280px;
@@ -148,8 +152,6 @@ button:hover {
     padding-top: 5px;
     padding-bottom: 5px;
     padding-right: 5px;
-    gap: 12px;
-    height: 30px;
 
     color: var(--black);
     background-repeat:  no-repeat;
@@ -174,7 +176,6 @@ button:hover {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-
 
 :root {
     --black: #212121;
@@ -208,4 +209,60 @@ button:hover {
 
 .contact-link_mail {
     background-image: url(../img/ContactsIcon.svg);    
+}
+
+.skill-list {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+
+.skill-list dt {
+    margin-bottom: 6px;
+    padding: 5px 0 5px 38px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+
+
+.skill-level {
+    margin: 4px 0 16px;
+    padding: 2px;
+    font-size: 0;
+    border: 1px solid var(--black);
+    border-radius: 16px;
+}
+
+
+.skill-level div {
+    height: 14px;
+    background-color: var(--green);
+    border-radius: 8px;
+}
+
+
+.skill-item {
+    text-transform: lowercase;
+}
+
+
+.skill-item_html {
+    background-image: url(../img/html.svg);
+}
+
+
+.skill-item_css {
+    background-image: url(../img/css.svg);
+}
+
+
+.skill-item_cpp {
+    background-image: url(../img/c++.svg);
+}
+
+
+.skill-item_python {
+    background-image: url(../img/python.svg);
 }
