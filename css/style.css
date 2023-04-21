@@ -56,6 +56,21 @@ a, button {
     line-height: 100%;
 }
 
+button {
+    padding: 6px, 10px, 10px, 10px;
+    border: 1px solid var(--green);
+    border-radius: 8px;
+    color: var(--green);
+    background-color: var(--white);
+    cursor: pointer;
+    text-transform: lowercase;
+}
+
+button:hover {
+    color: var(--white);
+    background-color: var(--green);
+}
+
 .subtitle {
     font-family: "Open Sans", "Ariel", sans-serif;
 
@@ -72,8 +87,125 @@ a, button {
     padding: 0 20px;
 }
 
+.main-nav a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: var(--black);
+    
+}
+
+.main-nav a:hover {
+    color: var(--green);
+}
+
+.social {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.social li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.contact {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.contact li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+
+.social-link {
+    display: block;
+
+    height: 50px;
+    width: 50px;
+    left: 20px;
+    top: 20px;
+    border-radius: 50000000px;
+    padding: 10px;
+    color: var(--green);
+    border: 1px solid var(--green);
+    background-repeat:  no-repeat;
+    background-position: center;
+}
+
+.contact-link {
+    display: block;
+    text-decoration: none;
+
+    padding-left: 42px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    gap: 12px;
+    height: 30px;
+
+    color: var(--black);
+    background-repeat:  no-repeat;
+    background-position: left;
+    margin: 10px;
+}
+
+.social-link:hover {
+    color: var(--white);
+    background-color: var(--green);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
 :root {
     --black: #212121;
     --green: #09A494;
     --white: #FFFFFF;
+}
+
+.social-link_github {
+    background-image: url(../img/github.svg);
+}
+
+.social-link_gitlab {
+    background-image: url(../img/gitlab.svg);
+}
+
+.social-link_instagram {
+    background-image: url(../img/instagram.svg);
+}
+
+.social-link_telegram {
+    background-image: url(../img/telegram.svg);
+}
+
+.social-link_vk {
+    background-image: url(../img/vk.svg);
+}
+
+.contact-link_phone {
+    background-image: url(../img/phone.svg);    
+}
+
+.contact-link_mail {
+    background-image: url(../img/ContactsIcon.svg);    
 }
