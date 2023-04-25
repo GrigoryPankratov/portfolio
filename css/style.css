@@ -20,6 +20,17 @@ footer {
     background-color: var(--black);
 }
 
+.main-header {
+    display: flex;
+    padding-top: 60px;
+    gap: 40px;
+    align-items: center;
+}
+
+.main-header nav a {
+    display: inline-block;
+}
+
 h1 {
     font-family: "Open Sans", "Arial", sans-serif;
 
@@ -36,6 +47,8 @@ h2 {
     font-weight: 700;
     font-size: 30px;
     line-height: 120%;
+    margin: 0;
+    margin-bottom:40px;
 }
 
 h3 {
@@ -86,6 +99,22 @@ button:hover {
     border-radius: 50%;
 }
 
+.name {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.name div h1 {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.name div p {
+    margin: 0;
+    margin-bottom: 0;
+}
+
 .container {
     min-width: 320px;
     max-width: 1280px;
@@ -93,8 +122,12 @@ button:hover {
     padding: 0 20px;
 }
 
+.main-nav {
+    display: flex;
+}
+
 .main-nav a {
-    display: inline-block;
+    display: flex;
     text-decoration: none;
     margin: 0 auto;
     padding: 10px 15px;
@@ -277,4 +310,8 @@ button:hover {
 
 .skill-item_python {
     background-image: url(../img/python.svg);
+}
+
+.text-wrapper {
+    max-width: 800px;
 }
