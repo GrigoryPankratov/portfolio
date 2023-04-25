@@ -34,7 +34,7 @@ footer {
 }
 
 .main-footer {
-    padding: 50px;
+    padding: 30px 50px;
 }
 
 h1 {
@@ -76,7 +76,7 @@ a, button {
 }
 
 button {
-    padding: 6px 10px 10px 10px;
+    padding: 6px 7px 7px 10px;
     border: 1px solid var(--green);
     border-radius: 8px;
     color: var(--green);
@@ -172,7 +172,7 @@ button:hover {
     display: flex;
     margin: 0;
     padding: 0;
-    gap: 40px;
+    gap: 37px;
     list-style-type: none;
     margin-bottom: 40px;
 }
@@ -268,7 +268,7 @@ button:hover {
 }
 
 .skills {
-    margin: 0;
+    
     
 }
 
@@ -281,6 +281,7 @@ button:hover {
     justify-content:space-between;
     align-items: center;
     
+    margin: 0;
     margin-bottom: 40px;
 }
 
@@ -292,7 +293,7 @@ button:hover {
 
 
 .skill-list dt {
-    margin-bottom: 6px;
+    margin-bottom: 5px;
     padding: 5px 0 5px 38px;
     background-position: left;
     background-repeat: no-repeat;
@@ -301,8 +302,8 @@ button:hover {
 
 
 .skill-level {
-    margin: 4px 0 20px;
-    padding: 2px;
+    margin: 3px 0 20px;
+    padding: 1px;
     font-size: 0;
     border: 1px solid var(--black);
     border-radius: 16px;
@@ -346,8 +347,9 @@ button:hover {
 
 .text-wrapper p {
     margin: 0;
+    margin-bottom: 15px;
 }
 
 .text-wrapper p:last-child {
-    margin-bottom: 15px;
+    margin-bottom: 0px;
 }
