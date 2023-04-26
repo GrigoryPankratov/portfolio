@@ -76,7 +76,7 @@ a, button {
 }
 
 button {
-    padding: 6px 7px 7px 10px;
+    padding: 6px 8px 7px 10px;
     border: 1px solid var(--green);
     border-radius: 8px;
     color: var(--green);
@@ -302,7 +302,7 @@ button:hover {
 
 
 .skill-level {
-    margin: 3px 0 20px;
+    margin: 6px 0 20px;
     padding: 1px;
     font-size: 0;
     border: 1px solid var(--black);
