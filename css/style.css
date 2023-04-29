@@ -34,7 +34,7 @@ footer {
 }
 
 .main-footer {
-    padding: 30px 50px;
+    padding: 30px;
 }
 
 h1 {
@@ -109,16 +109,16 @@ button:hover {
     display: flex;
     justify-content:space-between;
     align-items: center;
+    gap: 10px;
 }
 
-.name div h1 {
+.name h1 {
     margin: 0;
     margin-bottom: 20px;
 }
 
-.name div p {
+.name p {
     margin: 0;
-    margin-bottom: 0;
 }
 
 .container {
@@ -137,7 +137,6 @@ button:hover {
 }
 
 .main-nav a {
-    display: flex;
     text-decoration: none;
     margin: 0 auto;
     padding: 10px 15px;
@@ -283,6 +282,7 @@ button:hover {
     
     margin: 0;
     margin-bottom: 40px;
+    gap: 10px;
 }
 
 .skill-list {
@@ -351,5 +351,5 @@ button:hover {
 }
 
 .text-wrapper p:last-child {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
