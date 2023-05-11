@@ -353,3 +353,181 @@ button:hover {
 .text-wrapper p:last-child {
     margin-bottom: 0;
 }
+
+.nav-btn {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 1024px) {   
+	/* переопределение свойств */   
+}
+
+@media screen and (max-width: 1024px) {   
+	h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    
+    body {
+        font-size: 16px;
+    }
+
+    a, button {
+        font-size: 16px;
+    }
+
+    .subtitle {
+        font-size: 28px;
+    }
+    .name img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 650px) {   
+	h1 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    
+    body {
+        font-size: 14px;
+    }
+
+    a, button {
+        font-size: 14px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+    
+    .main-header{
+        padding-top: 20px;
+        /*display: block;*/
+        text-align: center;
+        gap: 20px;
+        
+        flex-direction: column
+    }
+    .main-header img{
+        width: 40px;
+        height: 40px;
+    }
+    .main-nav {
+        gap: 20px;
+        flex-direction: column;
+    }
+    .nav-btn {
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+    .nav-btn_close {
+        background-image: url(../img/close.svg);
+    }
+    .nav-btn_open {
+        background-image: url(../img/burger.svg);
+    }
+    .main-header-wrap {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .name {
+        flex-direction:column-reverse;
+        gap: 0;
+    }
+    .name h1 {
+        margin-bottom: 30px;
+    }
+    .name img {
+        width: 150px;
+        height: 150px;
+    }
+    .name div {
+        gap: 10px;
+        text-align: center;
+    }
+    h2 {
+        margin-bottom: 30px;
+    }
+    .skills dl{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 360px) {   
+    .skills {
+        gap: 0;
+    }
+    .skills h2{
+        
+        align-items: start;
+    }
+    .skills div{
+        flex-direction: column;
+        gap: 20px;
+        align-items: start;
+    }
+    .skills button{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    .Sort {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+    .contacts {
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 570px) {   
+	
+    .skills-head {
+        flex-wrap: wrap;
+    }  
+}
+
+@media screen and (max-width: 380px) {  
+    .skills {
+        gap: 0;
+    }
+    .skills h2{
+        
+        align-items: start;
+    }
+    .skills div{
+        flex-direction: column;
+        gap: 20px;
+        align-items: start;
+    }
+    .skills button{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    .Sort {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+}
