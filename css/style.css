@@ -13,6 +13,7 @@ body {
     line-height: 150%;
 
     color: var(--black);
+    /*flex-wrap: wrap;*/
 }
 
 footer {
@@ -128,8 +129,8 @@ button:hover {
     padding: 0 20px;
 }
 
-.container section {
-    margin-bottom: 120px;
+.container main {
+    gap: 120px;
 }
 
 .main-nav {
@@ -387,8 +388,14 @@ button:hover {
         font-size: 28px;
     }
     .name img {
-        width: 150px;
-        height: 150px;
+        width: 250px;
+        height: 250px;
+    }
+    .main-header {
+        margin-bottom: 80px;
+    }   
+    .name, .Me, .skills, .interests, .contacts {
+        margin-bottom: 80px;
     }
 }
 
@@ -414,6 +421,10 @@ button:hover {
     .subtitle {
         font-size: 20px;
     }
+    .name img {
+        width: 150px;
+        height: 150px;
+    }
     
     .main-header{
         padding-top: 20px;
@@ -430,6 +441,10 @@ button:hover {
     .main-nav {
         gap: 20px;
         flex-direction: column;
+        padding: 15px 0px;
+    }
+    .main-nav a {
+        padding: 10px 15px;
     }
     .nav-btn {
         display: block;
@@ -442,6 +457,12 @@ button:hover {
     .nav-btn_open {
         background-image: url(../img/burger.svg);
     }
+
+    /*.nav-btn_close:hover {
+        color: var(--white);
+        background-color: var(--green);
+    }*/
+
     .main-header-wrap {
         width: 100%;
         display: flex;
@@ -451,10 +472,10 @@ button:hover {
 
     .name {
         flex-direction:column-reverse;
-        gap: 0;
+        gap: 30px;
     }
     .name h1 {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
     .name img {
         width: 150px;
@@ -470,33 +491,55 @@ button:hover {
     .skills dl{
         margin-top: 30px;
     }
+
+    .contact li a{
+        padding: 8px 0px 8px 42px;
+    }
+    
+    .main-footer {
+        padding: 30px 430px 30px 20px;
+    }
+    .main-header {
+        margin-bottom: 57px;
+    }    
+    .name, .Me, .skills, .interests, .contacts {
+        margin-bottom: 57px;
+    }
+     
+    .social {
+        gap: 20px;
+    }
+    .skills >div{
+        margin-bottom: 36px;
+    }
+    .skill-list dt {
+        margin-bottom: 5px;
+    }
+    .skill-level {
+        margin: 6px 0 28px;
+    }
 }
 
 @media screen and (max-width: 360px) {   
-    .skills {
-        gap: 0;
+    .contacts h2{
+        margin-bottom: 30px;
     }
-    .skills h2{
-        
-        align-items: start;
-    }
-    .skills div{
+    .contact {
         flex-direction: column;
-        gap: 20px;
-        align-items: start;
+        gap: 15px;
+        margin-bottom: 20px;
     }
-    .skills button{
-        width: 100%;
-        text-align: center;
-        align-items: center;
+    .social {
+        flex-wrap: wrap;
     }
-    .Sort {
-        flex-direction: column;
-        width: 100%;
-        gap: 10px;
-    }
-    .contacts {
-        gap: 30px;
+    .main-header {
+        margin-bottom: 50px;
+    }  
+    .name, .Me, .skills, .interests, .contacts {
+        margin-bottom: 50px;
+    }  
+    .social {
+        gap: 15px;
     }
 }
 
@@ -515,19 +558,37 @@ button:hover {
         
         align-items: start;
     }
-    .skills div{
+    .skills >div{
         flex-direction: column;
-        gap: 20px;
+        gap: 16px;
         align-items: start;
+        margin-bottom: 27px;
     }
     .skills button{
         width: 100%;
         text-align: center;
         align-items: center;
+        padding: 6px 8px 7px 10px;
     }
     .Sort {
         flex-direction: column;
         width: 100%;
         gap: 10px;
+    }
+    .skills dl {
+        margin-top: 37px;
+    }
+    .skill-list dt {
+        margin-bottom: 3px;
+    }
+    .skill-level {
+        margin: 6px 0 26px;
+    }
+}
+
+@media screen and (max-width: 720px) {   
+	.name img {
+        width: 150px;
+        height: 150px;
     }
 }
