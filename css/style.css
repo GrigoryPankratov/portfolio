@@ -77,7 +77,7 @@ a, button {
 }
 
 button {
-    padding: 6px 8px 7px 10px;
+    padding: 6px 10px 10px 10px;
     border: 1px solid var(--green);
     border-radius: 8px;
     color: var(--green);
@@ -129,9 +129,9 @@ button:hover {
     padding: 0 20px;
 }
 
-.container main {
-    gap: 120px;
-}
+.name, .Me, .skills, .interests, .contacts {
+    margin-bottom: 120px;
+} 
 
 .main-nav {
     display: flex;
@@ -152,6 +152,7 @@ button:hover {
 .Sort {
     display: flex;
     gap: 20px;
+    align-items: center
 }
 
 .social {
@@ -468,6 +469,7 @@ button:hover {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        line-height: 0;
     }
 
     .name {
@@ -475,7 +477,7 @@ button:hover {
         gap: 30px;
     }
     .name h1 {
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
     .name img {
         width: 150px;
@@ -518,6 +520,9 @@ button:hover {
     .skill-level {
         margin: 6px 0 28px;
     }
+    .contact {
+        margin-bottom: 30px;
+    }
 }
 
 @media screen and (max-width: 360px) {   
@@ -540,6 +545,9 @@ button:hover {
     }  
     .social {
         gap: 15px;
+    }
+    .main-footer {
+        padding: 30px 140px 30px 20px;
     }
 }
 
@@ -568,7 +576,7 @@ button:hover {
         width: 100%;
         text-align: center;
         align-items: center;
-        padding: 6px 8px 7px 10px;
+        /*padding: 6px 8px 7px 10px;*/
     }
     .Sort {
         flex-direction: column;
