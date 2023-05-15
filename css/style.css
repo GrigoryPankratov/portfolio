@@ -31,6 +31,7 @@ footer {
 }
 .main-header-wrap {
     line-height: 0;
+    margin-bottom: 20px;
 }
 
 
@@ -38,8 +39,10 @@ footer {
     display: inline-block;
 }
 
-.main-footer {
-    padding: 30px 0;
+.main-footer{
+    padding: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .main-footer p{
@@ -453,7 +456,7 @@ button:hover {
     .main-nav {
         /*gap: 20px;*/
         flex-direction: column;
-        padding: 15px 0px;
+        /*padding: 15px 0px;*/
     }
     .main-nav a {
         padding-top: 20px;
@@ -509,14 +512,15 @@ button:hover {
         padding: 8px 0px 8px 42px;
     }
     
-    /*.main-footer {
-        padding: 30px 430px 30px 20px;
-    }*/
+    .main-footer {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
     .main-header {
-        margin-bottom: 57px;
+        margin-bottom: 60px;
     }    
     .name, .Me, .skills, .interests, .contacts {
-        margin-bottom: 57px;
+        margin-bottom: 60px;
     }
      
     .social {
