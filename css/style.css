@@ -31,7 +31,6 @@ footer {
 }
 .main-header-wrap {
     line-height: 0;
-    margin-bottom: 20px;
 }
 
 
@@ -52,11 +51,12 @@ footer {
 
 h1 {
     font-family: "Open Sans", "Arial", sans-serif;
-
     font-style: normal;
     font-weight: 700;
     font-size: 60px;
     line-height: 110%;
+    margin: 0;
+    margin-bottom: 20px;
 }
 
 h2 {
@@ -112,6 +112,7 @@ button:hover {
     font-size: 38px;
     line-height: 120%;
     color: var(--green);
+    margin: 0;
 }
 
 .name img {
@@ -484,6 +485,8 @@ button:hover {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        
+        margin-bottom: 20px;
     }
 
     .name {
