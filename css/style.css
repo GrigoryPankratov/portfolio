@@ -338,7 +338,7 @@ button:hover {
     text-transform: lowercase;
 }
 
-
+/*
 .skill-item_html {
     background-image: url(../img/html.svg);
 }
@@ -352,7 +352,7 @@ button:hover {
 .skill-item_cpp {
     background-image: url(../img/c++.svg);
 }
-
+*/
 
 .skill-item_python {
     background-image: url(../img/python.svg);

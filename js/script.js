@@ -1,0 +1,35 @@
+const skills = {
+	data: [
+	{name: "html", level: 50, css_class: "skill-item_html", img_name: "html.svg"},
+	{name: "css", level: 40, css_class: "skill-item_css", img_name: "css.svg"},
+	{name: "python", level: 30, css_class: "skill-item_python", img_name: "python.svg"},
+	{name: "c++", level: 65, css_class: "skill-item_cpp", img_name: "c++.svg"}
+	],
+
+	img_way: "../img/",
+
+	generateList: function(parentElement){
+	this.data.forEach(Element => {
+    const skill_dt = document.createElement('dt');
+	const skill_dd = document.createElement('dd');
+	const skill_div = document.createElement('div');
+
+	skill_dt.classList.add('skill-item');
+	skill_dd.classList.add('skill-level');
+
+	skill_dt.textContent = Element.name;
+    skill_dd.textContent = `${Element.level}%`;
+
+	skill_dt.style.backgroundImage = `url(${this.img_way}${Element.img_name})`
+
+	skill_div.style.width = `${Element.level}%`;
+	skill_dd.appendChild(skill_div);
+
+	skillList.appendChild(skill_dt);
+	skillList.appendChild(skill_dd);
+	});
+	}
+};
+
+const skillList = document.querySelector('dl.skill-list');
+skills.generateList(skillList);
