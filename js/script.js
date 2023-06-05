@@ -6,7 +6,7 @@ const skills = {
 	{name: "c++", level: 65, img_name: "c++.svg"}
 	],
 
-	img_way: "../img/",
+	img_way: "img/",
 
 	generateList: function(parentElement){
 	this.data.forEach(Element => {
