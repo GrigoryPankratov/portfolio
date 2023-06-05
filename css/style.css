@@ -13,7 +13,16 @@ body {
     line-height: 150%;
 
     color: var(--black);
-    /*flex-wrap: wrap;*/
+    background-color: var(--white);
+}
+
+.dark-theme {
+    --black: #CCCCCC;
+    --white: #031923;
+}
+
+.dark-theme .social-link {
+    background-color: #CCCCCC;
 }
 
 footer {
@@ -279,8 +288,16 @@ button:hover {
     background-image: url(../img/phone.svg);    
 }
 
+.dark-theme .contact-link_phone {
+    background-image: url(../img/dark_phone.svg);    
+}
+
 .contact-link_mail {
-    background-image: url(../img/ContactsIcon.svg);    
+    background-image: url(../img/mail.svg);    
+}
+
+.dark-theme .contact-link_mail {
+    background-image: url(../img/dark_mail.svg);    
 }
 
 .skills {
