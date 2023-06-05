@@ -6,8 +6,6 @@ const skills = {
 	{name: "c++", level: 65, img_name: "c++.svg"}
 	],
 
-	img_way: "img/",
-
 	generateList: function(parentElement){
 	this.data.forEach(Element => {
     const skill_dt = document.createElement('dt');
@@ -20,7 +18,7 @@ const skills = {
 	skill_dt.textContent = Element.name;
     skill_dd.textContent = `${Element.level}%`;
 
-	skill_dt.style.backgroundImage = `url(${this.img_way}${Element.img_name})`
+	skill_dt.style.backgroundImage = `url(img/${Element.img_name})`
 
 	skill_div.style.width = `${Element.level}%`;
 	skill_dd.appendChild(skill_div);
