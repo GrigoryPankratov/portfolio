@@ -1,9 +1,9 @@
 const skills = {
 	data: [
-	{name: "html", level: 50, css_class: "skill-item_html", img_name: "html.svg"},
-	{name: "css", level: 40, css_class: "skill-item_css", img_name: "css.svg"},
-	{name: "python", level: 30, css_class: "skill-item_python", img_name: "python.svg"},
-	{name: "c++", level: 65, css_class: "skill-item_cpp", img_name: "c++.svg"}
+	{name: "html", level: 50, img_name: "html.svg"},
+	{name: "css", level: 40, img_name: "css.svg"},
+	{name: "python", level: 30, img_name: "python.svg"},
+	{name: "c++", level: 65, img_name: "c++.svg"}
 	],
 
 	img_way: "../img/",
