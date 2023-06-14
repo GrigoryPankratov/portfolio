@@ -490,6 +490,10 @@ button:hover {
         display: block;
         width: 30px;
         height: 30px;
+        border: none;
+    }
+    .nav-btn:hover {
+        background-color: transparent;
     }
     .nav-btn_close {
         background-image: url(../img/close.svg);
@@ -564,6 +568,10 @@ button:hover {
     .contact {
         margin-bottom: 30px;
     }
+
+    .main-nav_closed {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 360px) {   
@@ -590,6 +598,10 @@ button:hover {
     /*.main-footer {
         padding: 30px 140px 30px 20px;
     }*/
+
+    .nav-btn {
+        border-radius: 0;
+    }
 }
 
 @media screen and (max-width: 570px) {   

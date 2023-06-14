@@ -23,7 +23,6 @@ const skills = {
 
 			skill_div.style.width = `${Element.level}%`;
 			skill_dd.appendChild(skill_div);
-
 			skillList.append(skill_dt, skill_dd);
 		});
 	},
@@ -96,5 +95,34 @@ function getComparer(prop) {
 
       return 0;
     };
-  }
+  };
+
+  const menu = {
+	navMenu: document.querySelector('.main-nav'),
+	navButton: document.querySelector('.nav-btn'),
+  
+	open: function() {
+	  this.navMenu.classList.remove('main-nav_closed');
+	  this.navButton.classList.remove('nav-btn_open');
+	  this.navButton.classList.add('nav-btn_close');
+	  this.navButton.innerHTML = 
+	  '<span class="visually-hidden">Открыть меню</span>'
+	},
+  
+	close: function() {
+	  this.navMenu.classList.add('main-nav_closed');
+	  this.navButton.classList.remove('nav-btn_close');
+	  this.navButton.classList.add('nav-btn_open');
+	  this.navButton.innerHTML = 
+	  '<span class="visually-hidden">Закрыть меню</span>'
+	}
+  };
+  
+  menu.navButton.addEventListener('click', () => {
+	if (menu.navMenu.classList.contains('main-nav_closed')) {
+	  menu.open();
+	} else {
+	  menu.close();
+	}
+  });
 
