@@ -32,9 +32,12 @@ const skills = {
 		this.sortProperty = prop;
 		this.isDescendingOrder = isDescendingOrder;
   
-		this.data.sort(this.getComparer(prop));
+		
 		if (isDescendingOrder) {
-		  this.data.reverse();
+			this.data.reverse();
+		}
+		else {
+			this.data.sort(this.getComparer(prop));
 		}
   
 		this.generateList(skillList);
@@ -70,7 +73,7 @@ skillSort.addEventListener('click', (e) => {
 	}
 });
 
-function compare() {
+/*function compare() {
     skills.data.sort(function(a, b) {
     if (a.name < b.name) {
       return -1;
@@ -95,18 +98,16 @@ function getComparer(prop) {
 
       return 0;
     };
-  };
+  };*/
 
   const menu = {
-	navMenu: document.querySelector('.main-nav'),
-	navButton: document.querySelector('.nav-btn'),
-  
+	 
 	open: function() {
 	  this.navMenu.classList.remove('main-nav_closed');
 	  this.navButton.classList.remove('nav-btn_open');
 	  this.navButton.classList.add('nav-btn_close');
 	  this.navButton.innerHTML = 
-	  '<span class="visually-hidden">Открыть меню</span>'
+	  '<span class="visually-hidden">Закрыть меню</span>'
 	},
   
 	close: function() {
@@ -114,15 +115,26 @@ function getComparer(prop) {
 	  this.navButton.classList.remove('nav-btn_close');
 	  this.navButton.classList.add('nav-btn_open');
 	  this.navButton.innerHTML = 
-	  '<span class="visually-hidden">Закрыть меню</span>'
-	}
+	  '<span class="visually-hidden">Открыть меню</span>'
+	},
+
+	toggleMenu: function() {
+		if (this.navMenu.classList.contains('main-nav_closed')) {
+		  this.open();
+		} else {
+		  this.close();
+		}
+	},
+
+	init: function(navMenu, navButton) {
+		this.close(navMenu, navButton);
+		navButton.addEventListener('click', () => {
+	
+		  this.toggleMenu(navMenu, navButton);
+		});
+	  }
   };
   
-  menu.navButton.addEventListener('click', () => {
-	if (menu.navMenu.classList.contains('main-nav_closed')) {
-	  menu.open();
-	} else {
-	  menu.close();
-	}
-  });
-
+navMenu: document.querySelector('.main-nav');
+navButton: document.querySelector('.nav-btn');
+menu.init(navMenu, navButton);
