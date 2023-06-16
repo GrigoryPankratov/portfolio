@@ -102,27 +102,27 @@ function getComparer(prop) {
 
   const menu = {
 	 
-	open: function() {
-	  this.navMenu.classList.remove('main-nav_closed');
-	  this.navButton.classList.remove('nav-btn_open');
-	  this.navButton.classList.add('nav-btn_close');
-	  this.navButton.innerHTML = 
+	open: function(navMenu, navButton) {
+	  navMenu.classList.remove('main-nav_closed');
+	  navButton.classList.remove('nav-btn_open');
+	  navButton.classList.add('nav-btn_close');
+	  navButton.innerHTML = 
 	  '<span class="visually-hidden">Закрыть меню</span>'
 	},
   
-	close: function() {
-	  this.navMenu.classList.add('main-nav_closed');
-	  this.navButton.classList.remove('nav-btn_close');
-	  this.navButton.classList.add('nav-btn_open');
-	  this.navButton.innerHTML = 
+	close: function(navMenu, navButton) {
+	  navMenu.classList.add('main-nav_closed');
+	  navButton.classList.remove('nav-btn_close');
+	  navButton.classList.add('nav-btn_open');
+	  navButton.innerHTML = 
 	  '<span class="visually-hidden">Открыть меню</span>'
 	},
 
-	toggleMenu: function() {
-		if (this.navMenu.classList.contains('main-nav_closed')) {
-		  this.open();
+	toggleMenu: function(navMenu, navButton) {
+		if (navMenu.classList.contains('main-nav_closed')) {
+		  this.open(navMenu, navButton);
 		} else {
-		  this.close();
+		  this.close(navMenu, navButton);
 		}
 	},
 
@@ -135,6 +135,6 @@ function getComparer(prop) {
 	  }
   };
   
-navMenu: document.querySelector('.main-nav');
-navButton: document.querySelector('.nav-btn');
+const navMenu = document.querySelector('.main-nav');
+const navButton = document.querySelector('.nav-btn');
 menu.init(navMenu, navButton);
