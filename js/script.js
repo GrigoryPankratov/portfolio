@@ -138,3 +138,24 @@ function getComparer(prop) {
 const navMenu = document.querySelector('.main-nav');
 const navButton = document.querySelector('.nav-btn');
 menu.init(navMenu, navButton);
+
+const checkbox = document.querySelector('.switch-checkbox');
+const themeKey = 'theme';
+const savedTheme = localStorage.getItem(themeKey);
+
+if (savedTheme) {
+
+	document.body.classList.add(savedTheme);
+  
+}
+
+checkbox.addEventListener('change', (e) => {
+	if (e.target.checked) {
+	  document.body.classList.remove('dark-theme');
+	  localStorage.setItem(themeKey, 'white-theme');
+	} 
+	else {
+	  document.body.classList.add('dark-theme');
+	  localStorage.setItem(themeKey, 'dark-theme');
+	} 
+});
