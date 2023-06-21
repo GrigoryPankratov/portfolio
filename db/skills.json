@@ -1,0 +1,6 @@
+[
+    { "name": "html", "level": 50, "img_name": "html.svg" },
+	{ "name": "css", "level": 40, "img_name": "css.svg" },
+	{ "name": "python", "level": 30, "img_name": "python.svg" },
+	{ "name": "c++", "level": 65, "img_name": "c++.svg" }
+]

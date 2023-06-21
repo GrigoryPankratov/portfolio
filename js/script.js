@@ -1,10 +1,5 @@
 const skills = {
-	data: [
-		{ name: "html", level: 50, img_name: "html.svg" },
-		{ name: "css", level: 40, img_name: "css.svg" },
-		{ name: "python", level: 30, img_name: "python.svg" },
-		{ name: "c++", level: 65, img_name: "c++.svg" }
-	],
+	data: [],
 
 	generateList: function (parentElement) {
 		parentElement.innerHTML = '';
@@ -57,10 +52,24 @@ const skills = {
 	  },
   
 	  sortProperty: '', 
-	  isDescendingOrder: false
+	  isDescendingOrder: false,
+
+	  initList: function(url, parentElement, skillSection) {
+		fetch(url)
+		  .then(data => data.json())
+		  .then(object => {
+			this.data = object;
+			this.generateList(parentElement);
+		  })
+		  .catch(() => {
+			console.error('что-то пошло не так');
+			skillSection.remove();
+		  });
+	  }
 };
 
 const skillList = document.querySelector('dl.skill-list');
+skills.initList('db/skills.json', skillList);
 skills.generateList(skillList);
 
 const skillSort = document.querySelector('.sort');
