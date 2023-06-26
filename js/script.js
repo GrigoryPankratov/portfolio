@@ -69,8 +69,8 @@ const skills = {
 };
 
 const skillList = document.querySelector('dl.skill-list');
-skills.initList('db/skills.json', skillList);
-skills.generateList(skillList);
+const sectionSkill = document.querySelector('section.skills');
+skills.initList('db/skills.json', skillList, sectionSkill);
 
 const skillSort = document.querySelector('.sort');
 skillSort.addEventListener('click', (e) => {
